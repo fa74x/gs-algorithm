@@ -122,8 +122,31 @@ int main() {
     return 0;
 }
 
+/*
+
+Initially all m ∈ M and w ∈ W are free
+While there is a man m who is free and hasn’t proposed to
+every woman w for which (m, w) ∈ F
+	Choose such a man m
+	Let w be the highest-ranked woman in m’s preference list
+	to which m has not yet proposed
+	If w is free then
+		(m, w) become engaged
+	Else w is currently engaged to m
+		If w prefers m to m then
+			m remains free
+		Else w prefers m to m
+			(m, w) become engaged
+			m becomes free
+		Endif
+	Endif
+Endwhile
+Return the set S of engaged pairs
+
+*/
+
 /* 
-    input for n = 4 
+    random input for n = 4 
     ManPref[1][1] = 1;
     ManPref[1][2] = 2;
     ManPref[1][3] = 3;
