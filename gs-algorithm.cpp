@@ -29,7 +29,7 @@ int main() {
     scanf("%d", &n);
 
 
-    /* INICIALIZACION DE ESTRUCTURAS */
+    /* STRUCTURE INITIALIZATION */
     int ManPref[n+1][n+1];
     int WomanPref[n+1][n+1];
     int Ranking[n+1][n+1];
