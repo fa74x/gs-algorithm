@@ -2,7 +2,6 @@
 #include <time.h>
 
 typedef struct _rep_free_men_list *freeMenList;
-typedef struct _rep_couples *couples;
 
 struct _rep_free_men_list {
     int i;
